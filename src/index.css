@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer utilities {
+  /* * {
+    border: 1px solid red;
+  } */
   /* img {
     will-change: opacity;
     opacity: 0;

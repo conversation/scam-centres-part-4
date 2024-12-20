@@ -1,10 +1,12 @@
-import { TwitterTweetEmbed } from "react-twitter-embed";
+// import { Tweet as TwitterEmbed } from "react-tweet";
+import { XEmbed } from "react-social-media-embed";
 
 export default function Tweet({ tweetId }: { tweetId: string }) {
   return (
-    <div className="flex justify-center ">
-      <div className="max-w-[600px] w-full">
-        <TwitterTweetEmbed onLoad={() => {}} tweetId={tweetId} />
+    <div className="not-prose">
+      <div className="grid place-content-center">
+        {/* <TwitterEmbed id={tweetId} /> */}
+        <XEmbed url={tweetId} width={Math.min(window.innerWidth - 40, 600)} />
       </div>
     </div>
   );
