@@ -10,6 +10,7 @@ import AuthorSection, { Editorial, Author, Editors, Authors, Disclosures, Acknow
 import Pullquote from './components/Pullquote'
 import Tweet from './components/Tweet'
 import Readmore from './components/Readmore'
+import TitleTextBorder from './components/TitleTextBorder'
 
 <ArticleSetup
   theme='dark'
@@ -21,15 +22,18 @@ import Readmore from './components/Readmore'
   standfirst="Inside Southeast Asia's slavery scam centres"
 />
 
-<h1 className='font-base pt-40'>A grand escape</h1>
-<h3 className='font-base'>Scam centres of South-East Asia Part 3</h3>
-
-<div>
-  <p className='text-sm font-base inline-block'>By [Ivan Franceschini](https://theconversation.com/profiles/ivan-franceschini-1529038), [Ling Li](https://theconversation.com/profiles/ling-li-1529042) and The Conversation [Digital Storytelling Team]()</p>{' '}
-  <span><time className='text-xs font-base opacity-50'>{new Date().toDateString()}</time></span>
+<div className='mx-auto max-w-[45ch] text-center pt-40'>
+  <TitleTextBorder as={'h1'} className='text-balance text-center font-base text-4xl font-bold md:text-5xl lg:text-6xl'>A grand escape</TitleTextBorder>
 </div>
 
-<Pullquote className='py-6 text-red-50 text-xl sm:text-2xl text-balance text-center' quote="I cannot bear this life any longer, and they might find out anytime that I am talking to you. I will jump from the third floor tonight, please come and help." />
+<h3 className='font-base text-center'>Scam centres of South-East Asia Part 3</h3>
+
+<div className='text-center mb-14'>
+  <p className='text-sm font-base inline-block m-0'>By [Ivan Franceschini](https://theconversation.com/profiles/ivan-franceschini-1529038), [Ling Li](https://theconversation.com/profiles/ling-li-1529042) and The Conversation [Digital Storytelling Team]()</p><br/>
+  <span className='text-xs font-base opacity-50 m-0'>Published <time >{new Date().toDateString()}</time></span>
+</div>
+
+<Pullquote className='' quote="I cannot bear this life any longer, and they might find out anytime that I am talking to you. I will jump from the third floor tonight, please come and help." />
 
 In early 2023, Ling (one of the authors) was volunteering with a Chinese rescue group in Cambodia and received this text message from a young Chinese man named Jack. 
 
@@ -49,15 +53,15 @@ The second is to attempt an escape, as Jack did. As compounds often have high wa
 
 Bolder escapes are not uncommon. In 2022, for instance, around 40 Vietnamese workers broke out of a compound in Cambodia and leapt into a river to try to swim to freedom. One 16-year-old drowned in the process. 
 
-{/* <Tweet tweetId='https://x.com/ngahpham/status/1560508973006360576' /> */}
+<Tweet tweetId='1560508973006360576' />
 
-<blockquote className="twitter-tweet" data-media-max-width="560"><p>40 Vietnamese men and women fled a casino in Cambodia on Thursday and tried to swim back to Vietnam&#39;s An Giang province. One reportedly drowned. They said they were duped into working illegally Cambodia and got beaten. <a href="https://t.co/Q9UHpVbaYh">pic.twitter.com/Q9UHpVbaYh</a></p>&mdash; Nga Pham (@ngahpham) <a href="https://twitter.com/ngahpham/status/1560508973006360576?ref_src=twsrc%5Etfw">August 19, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js"></script>
+{/* <blockquote className="twitter-tweet" data-media-max-width="560"><p>40 Vietnamese men and women fled a casino in Cambodia on Thursday and tried to swim back to Vietnam&#39;s An Giang province. One reportedly drowned. They said they were duped into working illegally Cambodia and got beaten. <a href="https://t.co/Q9UHpVbaYh">pic.twitter.com/Q9UHpVbaYh</a></p>&mdash; Nga Pham (@ngahpham) <a href="https://twitter.com/ngahpham/status/1560508973006360576?ref_src=twsrc%5Etfw">August 19, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js"></script> */}
 
 The third way out is to ask for police intervention through official channels. For instance, people trapped in Cambodian compounds can call a dedicated hotline or leave SOS messages to the social media pages of government officials. However, this escape route is challenging given the links between powerful local actors and some scam centre operators.
 
-{/* <Tweet tweetId='https://x.com/ngahpham/status/1572180278290034688' /> */}
+<Tweet tweetId='1572180278290034688' />
 
-<blockquote className="twitter-tweet"><p >More than 70 Vietnamese fled a Chinese-run casino in Svay Rieng Cambodia on 17 Sept. This is the second incident in two months. In August 42 Vietnamese workers swam across a river between Vietnam and Cambodia after being chased by casino guards. One drowned. <a href="https://t.co/ssTKp1dFvN">pic.twitter.com/ssTKp1dFvN</a></p>&mdash; Nga Pham (@ngahpham) <a href="https://twitter.com/ngahpham/status/1572180278290034688?ref_src=twsrc%5Etfw">September 20, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" ></script>
+{/* <blockquote className="twitter-tweet"><p >More than 70 Vietnamese fled a Chinese-run casino in Svay Rieng Cambodia on 17 Sept. This is the second incident in two months. In August 42 Vietnamese workers swam across a river between Vietnam and Cambodia after being chased by casino guards. One drowned. <a href="https://t.co/ssTKp1dFvN">pic.twitter.com/ssTKp1dFvN</a></p>&mdash; Nga Pham (@ngahpham) <a href="https://twitter.com/ngahpham/status/1572180278290034688?ref_src=twsrc%5Etfw">September 20, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" ></script> */}
 
 In all three scenarios, getting out is only the first step. Survivors often then find themselves stranded in a foreign country where they do not speak the language or know anyone. Not only do they not have any legal documents, they may also be suspected of having engaged in criminal activities. Of course, this is often exactly what they have done, even if they claim it was under duress. Many end up languishing in immigration detention centres for months.
 
@@ -65,11 +69,11 @@ In all three scenarios, getting out is only the first step. Survivors often then
 
 Among our interviewees was a couple who had a baby while in Cambodian immigration detention. The mother was 16 and already pregnant when she was trafficked by boat from China to work in a scam centre. This is where she met her new partner. He told us: 
 
-<Pullquote className='py-6 text-red-50 text-xl sm:text-2xl text-balance text-center' quote="When the due date approached, I begged the guard to let my girlfriend go to the hospital, but they just kept asking us for money. Finally, it was the rescue team who paid the fee, as well as all the charges for the delivery of the baby." />
+<Pullquote className='' quote="When the due date approached, I begged the guard to let my girlfriend go to the hospital, but they just kept asking us for money. Finally, it was the rescue team who paid the fee, as well as all the charges for the delivery of the baby." />
 
-<Pullquote className='py-6 text-red-50 text-xl sm:text-2xl text-balance text-center' quote="But just a few days later, the immigration police locked us back in jail with our baby. My girlfriend was not able to produce any milk because she was malnourished. We were all covered with bed bugs, but when we asked for treatment, the guards again demanded tips." startQuoteIcon={false} endQuoteIcon={false}/>
+<Pullquote className='' quote="But just a few days later, the immigration police locked us back in jail with our baby. My girlfriend was not able to produce any milk because she was malnourished. We were all covered with bed bugs, but when we asked for treatment, the guards again demanded tips." startQuoteIcon={false} endQuoteIcon={false}/>
 
-<Pullquote className='py-6 text-red-50 text-xl sm:text-2xl text-balance text-center' quote="My girlfriend fell into depression because it felt like the entire world had abandoned us." startQuoteIcon={false} endQuoteIcon={true}/>
+<Pullquote className='' quote="My girlfriend fell into depression because it felt like the entire world had abandoned us." startQuoteIcon={false} endQuoteIcon={true}/>
 
 ## How did Ben, Moira and George escape?
 
@@ -105,7 +109,7 @@ While trapped in Myanmar, George managed to contact an NGO known to rescue peopl
 
 An armed escort brought George to a secretive holding cell.
 
-<Pullquote className='py-6 text-red-50 text-xl sm:text-2xl text-balance text-center' quote="There like around 15 boys were locked up there, with chains on their legs, big chains. We wouldn't even ask many questions because now you're trying to get out, you're already in your own situation." />
+<Pullquote className='' quote="There like around 15 boys were locked up there, with chains on their legs, big chains. We wouldn't even ask many questions because now you're trying to get out, you're already in your own situation." />
 
 After spending a harrowing night there, George was taken by boat back across the Mekong River to Laos. There, he checked into a guesthouse. With no money or travel documents, he somehow convinced the owner that someone from an NGO would turn up to pay his bills. 
 
@@ -113,7 +117,7 @@ For months, George waited for the local anti-trafficking police to help him and 
 
 Finally, the police came and moved him to a shelter in the capital, Vientiane, where he spent another two months, waiting: 
 
-<Pullquote className='py-6 text-red-50 text-xl sm:text-2xl text-balance text-center' quote="There was nothing to do, just every day wake up, sit, stand, sit, sleep, like that. … Life was just like that, boring. " />
+<Pullquote className='' quote="There was nothing to do, just every day wake up, sit, stand, sit, sleep, like that. … Life was just like that, boring. " />
 
 **EXPLAIN WHO ARRANGED THE TICKET** eventually put George on a flight back to Kampala in July 2023, almost one year from the beginning of his ordeal. 
 
@@ -125,9 +129,9 @@ The burden of proof is often an insurmountable hurdle. Most of our interviewees 
 
 A common tactic used by scam operators is to confiscate their workers’ phones, replacing them with company devices that are heavily monitored and used specifically to perpetrate scams. As one survivor told us:
 
-<Pullquote className='py-6 text-red-50 text-xl sm:text-2xl text-balance text-center' quote="We were only allowed to download certain apps for scam purposes. Sometimes they let us use our personal phones to send messages to family, but the manager would be there watching us." />
+<Pullquote className='' quote="We were only allowed to download certain apps for scam purposes. Sometimes they let us use our personal phones to send messages to family, but the manager would be there watching us." />
 
-<Pullquote className='py-6 text-red-50 text-xl sm:text-2xl text-balance text-center' quote="After my family paid a ransom for me, they gave back my phone but cleaned everything inside. So, I do not have any evidence to prove that they trafficked me." startQuoteIcon={false} endQuoteIcon={true}/>
+<Pullquote className='' quote="After my family paid a ransom for me, they gave back my phone but cleaned everything inside. So, I do not have any evidence to prove that they trafficked me." startQuoteIcon={false} endQuoteIcon={true}/>
 
 Another survivor was denied being recognised as a victim because police found a photo of him laughing with colleagues in the compound, which they viewed as evidence he had voluntarily worked there. Other images documenting the violence and dark side of life in the compound had been deleted by his manager before he let him go.
 
@@ -151,10 +155,10 @@ This is especially the case in China, where the government has launched high-pro
 
 Alice, the Taiwanese survivor from part 1 of our series, who claims she was repeatedly raped inside scam compounds, faced a significant backlash when she returned home. Many blamed her for being greedy and naïve:
 
-<Pullquote className='py-6 text-red-50 text-xl sm:text-2xl text-balance text-center' quote="I felt so depressed when one of my best friends called me stupid." startQuoteIcon={true} endQuoteIcon={false}/>
-<Pullquote className='py-6 text-red-50 text-xl sm:text-2xl text-balance text-center' quote="He thought I had fallen into the trap because I wanted to be paid a lot of money without considering if I was qualified for it. I told him it was not true." startQuoteIcon={false} endQuoteIcon={false}/>
+<Pullquote className='' quote="I felt so depressed when one of my best friends called me stupid." startQuoteIcon={true} endQuoteIcon={false}/>
+<Pullquote className='' quote="He thought I had fallen into the trap because I wanted to be paid a lot of money without considering if I was qualified for it. I told him it was not true." startQuoteIcon={false} endQuoteIcon={false}/>
 
-<Pullquote className='py-6 text-red-50 text-xl sm:text-2xl text-balance text-center' quote="During the pandemic, I had no income, and my baby’s father had left me. As a single mother, I would have just grabbed any opportunity for my kid to survive." startQuoteIcon={false} endQuoteIcon={true}/>
+<Pullquote className='' quote="During the pandemic, I had no income, and my baby’s father had left me. As a single mother, I would have just grabbed any opportunity for my kid to survive." startQuoteIcon={false} endQuoteIcon={true}/>
 
 ## So, what can be done?
 
@@ -176,7 +180,7 @@ Importantly, resources and support need to be directed to groups on the ground i
 
 For the victims themselves, sharing their stories is also important. As George told us:
 
-<Pullquote className='py-6 text-red-50 text-xl sm:text-2xl text-balance text-center' quote="People have to be made aware of what is happening. People have to know about it." startQuoteIcon={true} endQuoteIcon={false}/>
+<Pullquote className='' quote="People have to be made aware of what is happening. People have to know about it." startQuoteIcon={true} endQuoteIcon={false}/>
 
 <AuthorSection>
  <Editorial>
