@@ -66,7 +66,7 @@ export default function TitleImage() {
           </TitleTextBorder>
         </div>
 
-        <h3 className="text-center font-body mt-8">Part four: Freedom</h3>
+        <h3 className="text-center font-body mt-8">Part four: freedom</h3>
 
         <div className="text-center">
           <span className="inline-block font-base text-sm">
