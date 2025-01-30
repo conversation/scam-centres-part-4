@@ -27,8 +27,6 @@ import BeforeAfterSlider from './components/BeforeAfterSlider'
 
 <TitleImage />
 
-{/* <Pullquote className='' quote="I cannot bear this life any longer, and they might find out anytime that I am talking to you. I will jump from the third floor tonight, please come and help." /> */}
-
 <figure className='not-prose my-10'>
   <div className='mx-auto max-w-[600px] px-8 font-base'>
     <div className='message_bubble message_bubble_right relative my-4 ml-auto rounded-b-lg rounded-l-lg bg-[#e2ffc7] p-3 pb-5 text-neutral-900 opacity-100 drop-shadow-lg text-2xl'>
@@ -37,7 +35,6 @@ import BeforeAfterSlider from './components/BeforeAfterSlider'
     </div>
   </div>
 </figure>
-
 
 In early 2023, Ling (one of the authors) was volunteering with a Chinese rescue group in Cambodia and received this text message from a young Chinese man named Jack. 
 
@@ -50,13 +47,12 @@ Jack managed to send his location to the rescue team and crawl 100 metres to mee
 <ScrollSection className='my-12' pinType='pin_block'>
   <ScrollBackground className=''>
     <video
-      className='full_screen_media make_visible blur-md'
+      className='full_screen_media make_visible blur-sm'
       src='./3697265025-preview.mp4'
       muted
       autoPlay
       playsInline
     />
-
   </ScrollBackground>
   <ScrollForeground className=''>
     <ScrollTextChapter className='chapter_dark_background' position='center'>
@@ -65,7 +61,6 @@ Jack managed to send his location to the rescue team and crawl 100 metres to mee
     <ScrollTextChapter position='center' className='chapter_dark_background'>
       The manager threatened to cut off his hand if he was caught.
     </ScrollTextChapter>
-   
   </ScrollForeground>
 </ScrollSection>
 
@@ -87,7 +82,12 @@ The third way out is to seek police intervention through official channels. For 
 
 In all three scenarios, getting out is only the [first step](https://globalchinapulse.net/lost-in-salvation-how-the-current-victim-identification-systems-fail-survivors-of-the-online-scam-industry-in-southeast-asia/). Survivors often then find themselves stranded in a foreign country where they do not speak the language or know anyone. They don’t have legal documents and may be suspected of engaging in criminal activities. Of course, this is often exactly what they have done, even if they claim it was under duress. Many end up languishing in immigration detention centres for months.
 
-<Readmore description='This is a four-part series on the slavery scam compounds of South-East Asia.' url='' linkText='Read part one on how the scammers are not who you think they are'/>
+<div className='relative my-10 grid grid-cols-[minmax(5rem,10%)_1fr] sm:grid-cols-[minmax(8rem,10%)_1fr] gap-4 border-y border-neutral-500 py-4'>
+  <div className='not-prose aspect-square w-full overflow-hidden rounded-md'>
+    <img src="https://images.theconversation.com/files/643993/original/file-20250122-15-av4juc.jpg?ixlib=rb-4.1.0&q=45&auto=format&w=754&h=1000&fit=crop&dpr=1" alt='' className='not_fullscreen_media' />
+  </div>
+  <p className='!mb-0 !mt-0 italic'>Scam Factories is a special multimedia and podcast series by The Conversation. Listen to part 1 of the <a href='#' target='_parent' className='text-neutral-100 hover:text-neutral-200'>podcast series here</a>. Read part 1 of the digital series, <a href='https://scam-factories-life-inside.netlify.app/' target='_blank' className='text-neutral-100 hover:text-neutral-200'>Locked In, here</a>.</p>
+</div>
 
 Among our interviewees was a couple who had a baby while in Cambodian immigration detention. The mother was 16 and already pregnant when she was trafficked by boat from China to work in a scam centre. This is where she met her new partner. He told us: 
 
@@ -115,12 +115,12 @@ Ben and Moira were tricked into travelling to a Cambodian scam centre in early 2
 /> 
 
 <div className=''>
-<figure className='float-right aspect-[9/16] h-auto w-1/2  mt-0'>
-<video src='https://cdn.theconversation.com/infographics/1141/81f4f9b52ac690df8fb6aa7f19279763f13ed3a0/site/Svay%20Rieng%20Station.mp4' controls muted className=' not-prose' ></video>
-<figcaption>
-Moira and Ben were held at the Svay Rieng police station overnight<span className='opacity-75'>Source: Ben & Moira</span>
-</figcaption>
-</figure>
+  <figure className='float-right aspect-[9/16] h-auto w-1/2  mt-0'>
+    <video src='https://cdn.theconversation.com/infographics/1141/81f4f9b52ac690df8fb6aa7f19279763f13ed3a0/site/Svay%20Rieng%20Station.mp4' controls muted className=' not-prose' ></video>
+    <figcaption>
+    Moira and Ben were held at the Svay Rieng police station overnight<span className='opacity-75'>Source: Ben & Moira</span>
+    </figcaption>
+  </figure>
 </div>
 
 Their ordeal didn’t end there, however. When Ben and Moira gave their statement to the police, a negotiator from the scam company was in the room, trying to interfere. Ben believed the local police station had been compromised. He feared they could be sold back to the scam centre. 
@@ -357,7 +357,7 @@ For the victims themselves, sharing their stories is also important. As George t
         affiliationLink=''
         imgSrc='https://cdn.theconversation.com/avatars/470587/width238/image-20191027-113962-mmopio.jpg'
         profileLink='https://theconversation.com/profiles/justin-bergman-470587'
-        title='Senior Editor'
+        title='International Affairs Editor'
       />
 
       <Author
