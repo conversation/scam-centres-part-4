@@ -91,7 +91,7 @@ export function Author({
 export default function AuthorSection({ children }: { children?: ReactNode }) {
   return (
     <>
-      <hr className='!mb-3 w-full max-w-none' />
+      {/* <hr className='!mb-3 w-full max-w-none' /> */}
       <aside className='grid max-w-none text-sm'>{children}</aside>
     </>
   )
