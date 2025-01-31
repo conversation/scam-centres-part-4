@@ -12,6 +12,8 @@ export default function BeforeAfterSlider({
   sourceLink,
   className,
   sliderClassName,
+  alt,
+  sliderPosition = 50
 }: {
   beforeSrc: string;
   afterSrc: string;
@@ -21,6 +23,8 @@ export default function BeforeAfterSlider({
   sourceLink: string;
   className?: string;
   sliderClassName?: string;
+  alt?: string;
+  sliderPosition?: number;
 }) {
   const resizer = useRef<HTMLDivElement | null>(null);
   const slider = useRef<HTMLDivElement | null>(null);
@@ -149,7 +153,8 @@ export default function BeforeAfterSlider({
       >
         <div
           ref={before}
-          className="[clip-path:inset(0px_50%_0px_0px)] before-image absolute h-full w-full top-0 left-0  z-[2]"
+          className="[clip-path:inset(0px_50%_0px_0px)] before-image absolute h-full w-full top-0 left-0 z-[2] transition-all duration-300 ease-in-out"
+          style={{ clipPath: `inset(0px ${100-sliderPosition}% 0px 0px)` }}
         >
           <Imgix
             className="select-none object-cover object-left w-full h-full "
@@ -157,12 +162,12 @@ export default function BeforeAfterSlider({
             htmlAttributes={{
               loading: loading,
               draggable: false,
+              alt: alt ? alt : "",
             }}
             src={beforeSrc}
             sizes={sizes}
           />
         </div>
-
         <div className="w-full h-full">
           <Imgix
             className="select-none object-cover object-left w-full h-full"
@@ -170,6 +175,7 @@ export default function BeforeAfterSlider({
             htmlAttributes={{
               loading: loading,
               draggable: false,
+              alt: alt ? alt : "",
             }}
             src={afterSrc}
             sizes={sizes}
@@ -178,8 +184,22 @@ export default function BeforeAfterSlider({
 
         <div
           ref={resizer}
-          className="resizer absolute h-full border-[3px] border-r-white top-0 left-1/2 z-[5] touch-pan-y flex items-center"
-        ></div>
+          className="resizer absolute h-full border-[3px] border-r-white top-0 z-[5] touch-pan-y flex items-center transition-[left] duration-300 ease-in-out"
+          style={{left:`${sliderPosition}%`}}
+        >
+          <div className="bg-red-500 flex justify-center items-center text-white absolute -ml-5 w-10 h-10 rounded-full border-4 border-white cursor-col-resize">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18px"
+              height="10px"
+              viewBox="0 0 18 10"
+              fill="white"
+            >
+              <path d="M12.121 4.703V.488c0-.302.384-.454.609-.24l4.42 4.214a.33.33 0 0 1 0 .481l-4.42 4.214c-.225.215-.609.063-.609-.24V4.703z"></path>
+              <path d="M5.879 4.703V.488c0-.302-.384-.454-.609-.24L.85 4.462a.33.33 0 0 0 0 .481l4.42 4.214c.225.215.609.063.609-.24V4.703z"></path>
+            </svg>
+          </div>
+        </div>
       </div>
 
       {renderSource()}
