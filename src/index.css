@@ -36,6 +36,10 @@
   .imgfloat-left figcaption {
     @apply !max-w-none;
   }
+
+  .no-transition {
+    transition: none !important;
+  }
 }
 
 @layer components {
