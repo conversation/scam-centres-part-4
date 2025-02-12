@@ -103,6 +103,7 @@ export default {
             fontFamily: theme("fontFamily.body"),
             minHeight: "100vh",
             backgroundColor: theme("colors.neutral[50]"),
+            textWrap: "pretty",
 
             "& > *:not(.not-prose):not(hr):not(figure)": {
               marginInline: "auto !important",
@@ -169,6 +170,7 @@ export default {
             fontFamily: theme("fontFamily.body"),
             minHeight: "100vh",
             backgroundColor: theme("colors.neutral[800]"),
+            textWrap: "pretty",
 
             "& > *:not(.not-prose):not(hr):not(figure)": {
               marginInline: "auto !important",
