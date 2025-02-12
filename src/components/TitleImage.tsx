@@ -46,28 +46,29 @@ export default function TitleImage() {
       />
 
       <div className="relative z-10 h-screen place-content-center pt-14">
-        <div className="z-10 mx-auto max-w-[45ch] text-center">
+        <div className="mx-auto max-w-[45ch] text-center">
           <TitleTextBorder
             as={"h1"}
-            className="text-balance text-center font-base text-5xl font-bold md:text-6xl lg:text-7xl"
+            bgClassName="bg-neutral-50"
+            className="text-neutral-800 text-balance text-center font-base text-5xl font-bold md:text-6xl lg:text-7xl"
           >
             Scam Factories
           </TitleTextBorder>
           <br />
         </div>
 
-        <div className="mx-auto max-w-[35ch] text-center">
+        <div className="mx-auto max-w-[25ch] md:max-w-[40ch] text-center">
           <TitleTextBorder
             as={"h1"}
-            className="text-center font-body text-xl font-bold md:text-3xl"
+            bgClassName="bg-neutral-900"
+            className="text-neutral-50 text-center font-body text-xl font-bold md:text-3xl"
           >
-            Inside Southeast Asia’s brutal scam compounds
+            The inside story of Southeast Asia’s fraud compounds
           </TitleTextBorder>
         </div>
 
-        <h3 className="text-center font-body mt-8">Part four: freedom</h3>
-
-        <div className="text-center">
+        <div className="text-center mt-4">
+          <h2>Part three: Freedom</h2>
           <span className="inline-block font-base text-sm">
             By{" "}
             <a href="https://theconversation.com/profiles/ivan-franceschini-1529038">
@@ -77,7 +78,7 @@ export default function TitleImage() {
             <a href="https://theconversation.com/profiles/ling-li-1529042">
               Ling Li
             </a>{" "}
-            and The Conversation Digital Storytelling Team. Photos by Roun Ry
+            and The Conversation Digital Storytelling Team.
           </span>
           <br />
           <span className="font-base text-xs">
