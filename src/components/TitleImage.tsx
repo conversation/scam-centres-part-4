@@ -68,7 +68,7 @@ export default function TitleImage() {
         </div>
 
         <div className="text-center mt-4">
-          <h2>Part three: Freedom</h2>
+          <h2>Part three</h2>
           <span className="inline-block font-base text-sm">
             By{" "}
             <a href="https://theconversation.com/profiles/ivan-franceschini-1529038">
