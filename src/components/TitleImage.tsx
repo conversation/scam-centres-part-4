@@ -20,7 +20,7 @@ export default function TitleImage() {
             scrub: true,
           },
         })
-        .to(".title_picture", { y: 100 });
+        .to(".title_picture", { y: 150 });
     },
     { scope: sectionRef }
   );
