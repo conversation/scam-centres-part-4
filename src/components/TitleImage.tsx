@@ -82,7 +82,7 @@ export default function TitleImage() {
           </span>
           <br />
           <span className="font-base text-xs">
-            Published: <time className="">{new Date().toDateString()}</time>
+            Published: <time className="">Febrary 26, 2025</time>
           </span>
         </div>
       </div>
