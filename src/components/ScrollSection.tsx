@@ -25,7 +25,20 @@ export function ScrollSection({
       const section = sectionRef.current;
       if (!section) return;
 
-      document.querySelector("video")!.playbackRate = 0.25;
+      const video: HTMLVideoElement | null = section.querySelector("video");
+
+      if (video) {
+        video.playbackRate = 0.25;
+        ScrollTrigger.create({
+          trigger: section,
+          start: "top bottom",
+          end: "bottom top",
+          onEnter: () => video.play(),
+          onEnterBack: () => video.play(),
+          onLeave: () => video.pause(),
+          onLeaveBack: () => video.pause(),
+        });
+      }
 
       const steps = section.querySelectorAll(".pinned_foreground .step");
       const backgroundElements = section.querySelectorAll(

@@ -25,7 +25,7 @@ export default function Readmore() {
         is a special multimedia and podcast series by The Conversation. Listen
         to the{" "}
         <a
-          href="https://theconversation.com/it-seemed-like-a-good-job-at-first-how-people-are-trafficked-trapped-and-forced-to-scam-in-southeast-asia-scam-factories-podcast-ep-1-250444"
+          href="https://pod.link/1550643487"
           target="_parent"
           className="text-neutral-100 hover:text-neutral-200"
         >
