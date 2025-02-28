@@ -1,48 +1,68 @@
-import { ARTICLEWIDTH } from './util/constants'
-import Image from './components/Image'
-import BackgroundImage from './components/BackgroundImage'
-import { ScrollSection, ScrollForeground, ScrollTextChapter, ScrollBackground } from './components/ScrollSection'
-import TitleSection from './components/TitleSection'
-import Picture from './components/Picture'
-import IntroPhoneScam from './components/IntroPhoneScam'
-import ArticleSetup from './context/ArticleSetup'
-import AuthorSection, { Editorial, Author, Editors, Authors, Disclosures, Acknowledgements } from './components/Authors'
-import Pullquote from './components/Pullquote'
-import Readmore from './components/Readmore'
-import TitleTextBorder from './components/TitleTextBorder'
-import Tweet1 from './components/Tweet1'
-import Tweet2 from './components/Tweet2'
-import TitleImage from './components/TitleImage'
-import BeforeAfterSlider from './components/BeforeAfterSlider'
-import Imgix from 'react-imgix'
+import { ARTICLEWIDTH } from "./util/constants";
+import Image from "./components/Image";
+import BackgroundImage from "./components/BackgroundImage";
+import {
+  ScrollSection,
+  ScrollForeground,
+  ScrollTextChapter,
+  ScrollBackground,
+} from "./components/ScrollSection";
+import TitleSection from "./components/TitleSection";
+import Picture from "./components/Picture";
+import IntroPhoneScam from "./components/IntroPhoneScam";
+import ArticleSetup from "./context/ArticleSetup";
+import AuthorSection, {
+  Editorial,
+  Author,
+  Editors,
+  Authors,
+  Disclosures,
+  Acknowledgements,
+} from "./components/Authors";
+import Pullquote from "./components/Pullquote";
+import Readmore from "./components/Readmore";
+import TitleTextBorder from "./components/TitleTextBorder";
+import Tweet1 from "./components/Tweet1";
+import Tweet2 from "./components/Tweet2";
+import TitleImage from "./components/TitleImage";
+import BeforeAfterSlider from "./components/BeforeAfterSlider";
+import Imgix from "react-imgix";
 
 <ArticleSetup
-  theme='dark'
-  title='Getting out'
+  theme="dark"
+  title="Getting out"
   dropCap={false}
-  author='Ivan Franceschini'
-  image='https://images.theconversation.com/files/611350/original/file-20240805-21-8bzb4w.jpg?fit=crop&auto=format,compress&q=15&dpr=1&w=500&ar=3:2'
-  keywords={['Southeast Asia', 'Cambodia', 'Myanmar', 'scam', 'scam centre', 'scammers', 'Chinese scams']}
+  author="Ivan Franceschini"
+  image="https://images.theconversation.com/files/611350/original/file-20240805-21-8bzb4w.jpg?fit=crop&auto=format,compress&q=15&dpr=1&w=500&ar=3:2"
+  keywords={[
+    "Southeast Asia",
+    "Cambodia",
+    "Myanmar",
+    "scam",
+    "scam centre",
+    "scammers",
+    "Chinese scams",
+  ]}
   standfirst="Escaping a scam factory can be impossibly difficult. "
 />
 
 <TitleImage />
 
 <Picture
-  src='https://images.theconversation.com/files/616687/original/file-20240902-20-fpm408.jpg'
-  loading='lazy'
-  className=''
-  imgClassName='object-cover max-h-68 sm:object-[20%_20%] object-[20%_15%] aspect-[3/2] sm:aspect-[350/197]'
-  caption=''
-  source='Source: Halima Athumani'
-  sourceLink=''
-  alt='A man sitting on a chair, surrounded by shadow and looking down the lens.'
+  src="https://images.theconversation.com/files/616687/original/file-20240902-20-fpm408.jpg"
+  loading="lazy"
+  className=""
+  imgClassName="object-cover max-h-68 sm:object-[20%_20%] object-[20%_15%] aspect-[3/2] sm:aspect-[350/197]"
+  caption=""
+  source="Source: Halima Athumani"
+  sourceLink=""
+  alt="A man sitting on a chair, surrounded by shadow and looking down the lens."
   focalPoint={{
     mobile: { x: 0.6, y: 0 },
     tablet: { x: 0.6, y: 0 },
     tabletLandscape: { x: 0.6, y: 0 },
     laptop: { x: 0.6, y: 0 },
-    desktop: { x: 0.6, y: 0 }
+    desktop: { x: 0.6, y: 0 },
   }}
 />
 
@@ -56,13 +76,19 @@ Secretly, he's also plotting his escape. He uses a hidden SIM card to contact a 
 
 Astonishingly, this time it's not another beating. Instead they let him go. He's spirited to a holding cell along the Mekong River where he spends an anxious night.
 
-<Pullquote className='' quote="There were, like, around 15 boys locked up there, with chains on their legs, big chains." />
+<Pullquote
+  className=""
+  quote="There were, like, around 15 boys locked up there, with chains on their legs, big chains."
+/>
 
 The next day, George is taken by boat across the river back to Laos. Freedom, finally. But now he's stranded, without money or a passport. He checks into a guesthouse, promising payment will arrive soon, and cleans in exchange for food.
 
 Three months pass before the local anti-trafficking police arrive and move him to a shelter in Vientiane. Then it's another two months, waiting:
 
-<Pullquote className='' quote="There was nothing to do, just every day wake up, sit, stand, sit, sleep, like that. " />
+<Pullquote
+  className=""
+  quote="There was nothing to do, just every day wake up, sit, stand, sit, sleep, like that. "
+/>
 
 By the time George makes it back to Uganda, the whole ordeal has lasted nearly a year.
 
@@ -74,34 +100,38 @@ She also volunteered with rescue charity groups in Cambodia and collaborated wit
 
 These survivors told us there are only three ways out of a scam compound. Some people get their families to pay the ransom. Others, like George, reach out for help from police or an NGO. Others attempt an escape, but it's a risky move.
 
-<figure className='not-prose my-10'>
-  <div className='mx-auto max-w-[600px] px-8 font-base'>
-    <div className='message_bubble message_bubble_right relative my-4 mx-auto rounded-b-lg rounded-l-lg bg-[#e2ffc7] p-3 pb-5 text-neutral-900 opacity-100 drop-shadow-lg text-lg md:text-2xl'>
-      <p>I cannot bear this life any longer, and they might find out anytime that I am talking to you. I will jump from the third floor tonight, please come and help.</p>
-      <div className='absolute bottom-1 right-2 flex gap-1 text-sm text-neutral-400'>
-        <p>9:56 am</p>  
-        <Imgix className='inline w-5'
-            imgixParams={{
-              fit: 'crop',
-              auto: 'format',
-              q: 30
-            }}
-            htmlAttributes={{
-              loading: 'lazy',
-              width: '100%',
-              height: 'auto'
-            }}
-            src='https://images.theconversation.com/files/617201/original/file-20240904-16-xvj31z.png'
-            sizes='(max-width: 599px) 100px, (min-width: 600px) 100px, 100px'
-          />
+<figure className="not-prose my-10">
+  <div className="mx-auto max-w-[600px] px-8 font-base">
+    <div className="message_bubble message_bubble_right relative my-4 mx-auto rounded-b-lg rounded-l-lg bg-[#e2ffc7] p-3 pb-5 text-neutral-900 opacity-100 drop-shadow-lg text-lg md:text-2xl">
+      <p>
+        I cannot bear this life any longer, and they might find out anytime that
+        I am talking to you. I will jump from the third floor tonight, please
+        come and help.
+      </p>
+      <div className="absolute bottom-1 right-2 flex gap-1 text-sm text-neutral-400">
+        <p>9:56 am</p>
+        <Imgix
+          className="inline w-5"
+          imgixParams={{
+            fit: "crop",
+            auto: "format",
+            q: 30,
+          }}
+          htmlAttributes={{
+            loading: "lazy",
+            width: "100%",
+            height: "auto",
+          }}
+          src="https://images.theconversation.com/files/617201/original/file-20240904-16-xvj31z.png"
+          sizes="(max-width: 599px) 100px, (min-width: 600px) 100px, 100px"
+        />
       </div>
     </div>
   </div>
-   <div className='my-8 grid w-full place-items-center'>
-    <div className='loader'></div>
+  <div className="my-8 grid w-full place-items-center">
+    <div className="loader"></div>
   </div>
 </figure>
-
 
 In early 2023, a young Chinese man named Jack sent this text to a Cambodian rescue organisation with which Ling had been volunteering.
 
@@ -109,26 +139,27 @@ That night, he told his supervisor he wanted to work extra hours. As the guard s
 
 Jack sent his location to the rescue team and crawled 100 metres to a waiting driver.
 
-<ScrollSection className='my-12' pinType='pin_clipped'>
-  <ScrollBackground className='overflow-clip'>
-  <figure className='full_screen_media make_visible'>
-    <video
-      className='w-full h-full object-cover blur-sm'
-      src='https://cdn.theconversation.com/infographics/1142/331c01726b3614562d3f90898d56b7bcdc7dc781/site/shutterstock_3697265025-min.mp4'
-      muted
-      autoPlay
-      playsInline
-      loop
-      controls={false}
-    />
-  <figcaption>Source: ThreeEyedRavenProductions / Shutterstock</figcaption>
-  </figure>
+<ScrollSection className="my-12" pinType="pin_clipped">
+  <ScrollBackground className="overflow-clip">
+    <figure className="full_screen_media make_visible">
+      <video
+        className="w-full h-full object-cover blur-sm"
+        src="https://cdn.theconversation.com/infographics/1142/331c01726b3614562d3f90898d56b7bcdc7dc781/site/shutterstock_3697265025-min.mp4"
+        muted
+        autoPlay
+        playsInline
+        loop
+        controls={false}
+      />
+      <figcaption>Source: ThreeEyedRavenProductions / Shutterstock</figcaption>
+    </figure>
   </ScrollBackground>
-  <ScrollForeground className=''>
-    <ScrollTextChapter className='chapter_dark_background' position='center'>
-     On the way to a safe house, he discovered the compound manager had put a US$20,000 bounty on his head.
+  <ScrollForeground className="">
+    <ScrollTextChapter className="chapter_dark_background" position="center">
+      On the way to a safe house, he discovered the compound manager had put a
+      US$20,000 bounty on his head.
     </ScrollTextChapter>
-    <ScrollTextChapter position='center' className='chapter_dark_background'>
+    <ScrollTextChapter position="center" className="chapter_dark_background">
       The manager also threatened to cut off his hand.
     </ScrollTextChapter>
   </ScrollForeground>
@@ -138,17 +169,17 @@ Mass escapes occasionally happen too. In 2022, about 40 Vietnamese workers [brok
 
 <Tweet1 />
 
-Here's how the compound rebranded itself after the escape. 
+Here's how the compound rebranded itself after the escape.
 
 <BeforeAfterSlider
-  beforeSrc='https://images.theconversation.com/files/646023/original/file-20250131-17-fw3lrk.png'
-  afterSrc='https://images.theconversation.com/files/646022/original/file-20250131-15-vtlb44.png'
-  className=''
-  sliderClassName='aspect-[839/472]'
-  loading='lazy'
-  source='Source: Author provided/Google'
+  beforeSrc="https://images.theconversation.com/files/646023/original/file-20250131-17-fw3lrk.png"
+  afterSrc="https://images.theconversation.com/files/646022/original/file-20250131-15-vtlb44.png"
+  className=""
+  sliderClassName="aspect-[839/472]"
+  loading="lazy"
+  source="Source: Author provided/Google"
   caption="The scam compound before (left) and after the escape."
-  alt='The scam compound before and after the escape.'
+  alt="The scam compound before and after the escape."
   sliderPosition={20}
 />
 
@@ -166,9 +197,17 @@ Local police or immigration officers often demand evidence survivors have been t
 
 Scam operators typically confiscate workers’ phones and give them company devices that are heavily monitored. As one survivor told us:
 
-<Pullquote className='' quote="We were only allowed to download certain apps for scam purposes. Sometimes they let us use our personal phones to send messages to family, but the manager would be there watching us" />
+<Pullquote
+  className=""
+  quote="We were only allowed to download certain apps for scam purposes. Sometimes they let us use our personal phones to send messages to family, but the manager would be there watching us"
+/>
 
-<Pullquote className='' startQuoteIcon={false} endQuoteIcon={true} quote="After my family paid a ransom for me, they gave back my phone but cleaned everything inside. So, I don't have any evidence to prove that they trafficked me." />
+<Pullquote
+  className=""
+  startQuoteIcon={false}
+  endQuoteIcon={true}
+  quote="After my family paid a ransom for me, they gave back my phone but cleaned everything inside. So, I don't have any evidence to prove that they trafficked me."
+/>
 
 Police found a photo on another survivor's phone, showing him laughing with colleagues. They said it was proof he wasn't a victim.
 
@@ -177,40 +216,50 @@ Many survivors opt out of the whole lengthy process of proving they're victims a
 Some even turn to people traffickers to get home, which puts them at risk of being re-trafficked.
 
 <Image
-  src='https://images.theconversation.com/files/611297/original/file-20240805-23-7guk7w.jpg'
-  align=''
-  className=''
-  imgClassName='aspect-[3/2]'
-  loading='lazy'
-  alt='Sihanoukville, Cambodia, seen from the outskirts.'
-  source='Photo: Roun Ry'
+  src="https://images.theconversation.com/files/611297/original/file-20240805-23-7guk7w.jpg"
+  align=""
+  className=""
+  imgClassName="aspect-[3/2]"
+  loading="lazy"
+  alt="Sihanoukville, Cambodia, seen from the outskirts."
+  source="Photo: Roun Ry"
   caption="Sihanoukville, Cambodia, seen from the outskirts."
-/> 
+/>{" "}
 
 Once they're home, families and friends are often quick to judge. Many survivors are [ostracised](https://globalchinapulse.net/nowhere-people-in-the-china-myanmar-borderlands/).
 
 Alice, a Taiwanese victim we met in [part one](https://scam-factories-life-inside.netlify.app/) of our series, was repeatedly raped inside scam compounds. When she returned home, she was accused of being greedy and naïve.
 
-<Pullquote className='' quote="I felt so depressed when one of my best friends called me stupid." startQuoteIcon={true} endQuoteIcon={false}/>
+<Pullquote
+  className=""
+  quote="I felt so depressed when one of my best friends called me stupid."
+  startQuoteIcon={true}
+  endQuoteIcon={false}
+/>
 
-<Pullquote className='' quote="He thought I had fallen into the trap because I wanted to be paid a lot of money without considering if I was qualified for it. I told him it was not true." startQuoteIcon={false} endQuoteIcon={true}/>
+<Pullquote
+  className=""
+  quote="He thought I had fallen into the trap because I wanted to be paid a lot of money without considering if I was qualified for it. I told him it was not true."
+  startQuoteIcon={false}
+  endQuoteIcon={true}
+/>
 
-These kinds of binary judgements aren't particularly helpful because the line between victim and perpetrator is not always clear cut. Criminologists call it the “[victim-offender overlap](https://link.springer.com/article/10.1007/s12117-024-09525-5)”. 
+These kinds of binary judgements aren't particularly helpful because the line between victim and perpetrator is not always clear cut. Criminologists call it the “[victim-offender overlap](https://link.springer.com/article/10.1007/s12117-024-09525-5)”.
 
 We shouldn't excuse the actions of those scammers who enter the industry willingly, but nor should we let judgement get in the way of understanding why they made that choice.
 
 And rather than focusing on the culpability of those at the bottom of the food chain, we should turn our attention to the top.
 
 <Image
-  src='https://images.theconversation.com/files/611292/original/file-20240805-17-sw9owk.jpg'
-  align=''
-  className=''
-  imgClassName='aspect-[3/2]'
-  loading='lazy'
-  alt='The view of scam compounds from Otres Beach, Sihanoukville, Cambodia.'
-  source='Photo: Roun Ry'
+  src="https://images.theconversation.com/files/611292/original/file-20240805-17-sw9owk.jpg"
+  align=""
+  className=""
+  imgClassName="aspect-[3/2]"
+  loading="lazy"
+  alt="The view of scam compounds from Otres Beach, Sihanoukville, Cambodia."
+  source="Photo: Roun Ry"
   caption="The view of scam compounds from Otres Beach, Sihanoukville, Cambodia."
-/> 
+/>{" "}
 
 ## So, what can be done?
 
@@ -224,37 +273,54 @@ Crucially, groups on the ground rescuing and helping survivors, and those monito
 
 This makes it even more important for victims to share their stories. As rape survivor Alice told us:
 
-<ScrollSection className='mt-12' pinType='pin_clipped'>
-  <ScrollBackground className=''>
+<ScrollSection className="mt-12" pinType="pin_clipped">
+  <ScrollBackground className="">
     <Picture
-      src='https://images.theconversation.com/files/611285/original/file-20240805-17-3p1v0i.jpg'
-      loading='eager'
-      className='full_screen_media make_visible'
-      imgClassName='object-bottom-center brightness-50'
-      caption='Life in the shadow of the compounds, Occheuteal Beach, Sihanoukville'
-      source='Photo: Roun Ry'
-      sourceLink=''
-      alt='Life in the shadow of the compounds, Occheuteal Beach, Sihanoukville'
+      src="https://images.theconversation.com/files/611285/original/file-20240805-17-3p1v0i.jpg"
+      loading="eager"
+      className="full_screen_media make_visible"
+      imgClassName="object-bottom-center brightness-50"
+      caption="Life in the shadow of the compounds, Occheuteal Beach, Sihanoukville"
+      source="Photo: Roun Ry"
+      sourceLink=""
+      alt="Life in the shadow of the compounds, Occheuteal Beach, Sihanoukville"
       focalPoint={{
         mobile: { x: 0.5, y: 1 },
         tablet: { x: 0.5, y: 1 },
         tabletLandscape: { x: 0.5, y: 1 },
         laptop: { x: 0.5, y: 1 },
-        desktop: { x: 0.5, y: 1 }
+        desktop: { x: 0.5, y: 1 },
       }}
     />
   </ScrollBackground>
-  <ScrollForeground className=''>
-    <ScrollTextChapter position='' className=''>
-      <Pullquote className='text-white' quote="If I had been enslaved for a year or two, I might not be able to believe in humanity anymore." startQuoteIcon={true} endQuoteIcon={false} quoteClassname='opacity-20'/>
+  <ScrollForeground className="">
+    <ScrollTextChapter position="" className="">
+      <Pullquote
+        className="text-white"
+        quote="If I had been enslaved for a year or two, I might not be able to believe in humanity anymore."
+        startQuoteIcon={true}
+        endQuoteIcon={false}
+        quoteClassname="opacity-20"
+      />
     </ScrollTextChapter>
-     <ScrollTextChapter position='' className=''>
-      <Pullquote className='text-white' quote="People outside, including my own family, think that I was trafficked because I am greedy and wanted to get rich overnight. So, I need to tell my story." startQuoteIcon={false} endQuoteIcon={true} quoteClassname='opacity-20'/>
+    <ScrollTextChapter position="" className="">
+      <Pullquote
+        className="text-white"
+        quote="People outside, including my own family, think that I was trafficked because I am greedy and wanted to get rich overnight. So, I need to tell my story."
+        startQuoteIcon={false}
+        endQuoteIcon={true}
+        quoteClassname="opacity-20"
+      />
     </ScrollTextChapter>
   </ScrollForeground>
 </ScrollSection>
 
-<img src="https://counter.theconversation.com/content/250517/count.gif?distributor=republish-lightbox-advanced" alt="The Conversation" className='!border-0 !shadow-none !m-0 !max-h-[1px] !max-w-[1px] !min-h-[1px] !min-w-[1px] !opacity-0 !outline-none !p-0 w-px h-px' referrerPolicy='no-referrer-when-downgrade' />
+<img
+  src="https://counter.theconversation.com/content/250517/count.gif?distributor=republish-lightbox-advanced"
+  alt="The Conversation"
+  className="!border-0 !shadow-none !m-0 !max-h-[1px] !max-w-[1px] !min-h-[1px] !min-w-[1px] !opacity-0 !outline-none !p-0 w-px h-px"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
 
 <AuthorSection>
  <Acknowledgements>
@@ -318,11 +384,26 @@ This makes it even more important for victims to share their stories. As rape su
         title='Head of Audio, The Conversation UK'
       />
     </Editors>
+
   </Editorial>
 
   <Disclosures>
     The Conversation contacted all the companies mentioned in the series for comment (with the exception of Jinshui, which couldn't be contacted). We didn't receive any responses.
 
     In 2024, Ivan, Ling, Mark, and others co-founded EOS Collective, a non-profit organisation dedicated to investigating the dynamics of the online scam industry and the criminal networks behind it, and supporting survivors of forced criminality in these operations.
+
+    <hr />
+
+    <div className='text-lg'>
+    _If this article has raised issues for you, or you’re concerned about someone you know, you can contact these organisations working to combat human trafficking in Southeast Asia:_
+
+    - _[Blue Dragon](https://www.bluedragon.org/who-we-are/)_
+
+    - _[Global Alms Inc](https://www.globalalms.com/protection)_
+
+    _And if you've been the [victim of a scam](https://www.cyber.gov.au/report-and-recover/recover-from/scams), or you think you may have been targeted by a scammer, you can reach out to the [National Anti-Scam Centre](https://www.scamwatch.gov.au/report-a-scam) and [ReportCyber](https://www.cyber.gov.au/report-and-recover/report) for information._
+
+    </div>
+
   </Disclosures>
 </AuthorSection>
